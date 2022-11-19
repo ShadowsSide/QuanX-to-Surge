@@ -1,0 +1,9 @@
+#!name=Bussu
+#!desc=解锁Busuu会员
+#!system=ios
+
+[Script]
+解锁Busuu会员 = type=http-response,pattern=^https?:\/\/(.*.*.)\/users\/me,requires-body=true,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Busuu.js
+
+[MITM]
+hostname = *.boshu.*,*.bosuu.com,*.busuu.com
