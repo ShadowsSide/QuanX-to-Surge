@@ -1,0 +1,10 @@
+#!name=Spark
+#!desc=解锁 Spark Mail 会员
+#!system=ios
+
+[Script]
+解锁 Spark Mail 会员 = type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$),,requires-body=true,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/SparkMail.js
+
+
+[mitm]
+hostname=api.revenuecat.com
